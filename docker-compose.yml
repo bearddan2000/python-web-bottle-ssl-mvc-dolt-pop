@@ -1,0 +1,13 @@
+version: '3'
+services:
+    db:
+        image: dolthub/dolt-sql-server
+        ports:
+        - 3306
+        volumes:
+        - ./db/sql:/docker-entrypoint-initdb.d
+    py-srv:
+        build: py-srv
+        command: python app.py
+        ports:
+        - 443:443

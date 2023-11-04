@@ -1,0 +1,11 @@
+bottle
+bottle-sqlalchemy
+mysql-connector-python
+
+# for ssl
+cheroot
+
+# for logins
+beaker
+requests
+
